@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+}
+
+.big-title{
+    padding: 5px;
+    font-size: 3rem;
+    text-align: center;
+    font-family: monospace;
+    margin: 40px;
+}
+
+.addBoxShadow{
+    box-shadow: 3px 3px 5px;
+    transition: 0.2s;
+}
+
+.addBoxShadow:hover{
+    transition: 0.2s;
+    filter: drop-shadow(0px 0px 3px);
+}
+
+.clickMe{
+    display: flex;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px auto 20px auto;
+    transition: 0.5s;
+}
+.clickMe:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.2);
+}
