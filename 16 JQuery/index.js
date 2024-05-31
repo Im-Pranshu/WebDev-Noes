@@ -42,7 +42,7 @@ $("h1").addClass("big-title addBoxShadow");
 // $("h1").removeClass("big-title");
 
 // Enquire if a particular class is present in a particular element or not
-console.log($("h1").hasClass("addBoxShadow"));// it will return true if present else false.
+// console.log($("h1").hasClass("addBoxShadow"));// it will return true if present else false.
 
 // ****Change Text Using jQuery****
 
@@ -61,3 +61,34 @@ console.log($("a").attr("href"));
 // setting the value of href
 $("a").attr("href", "https://www.youtube.com") 
 $("a").html("youtube");// also update inner html
+
+
+// ****Add Event Listener****
+
+    // for one element
+    $("h1").click(function () {
+        if(($("h1").css("color")) === "rgb(0, 255, 255)"){
+            $("h1").css("color","pink");
+        }
+        else{
+            $("h1").css("color","aqua");
+        }
+    });
+
+    // for multiple elements together
+    
+    // Using Normal JavaScript
+        // for loop to target all buttons
+        // for(var i=0; i<5; i++){
+        //     document.querySelectorAll("button")[i].addEventListener( "click",
+        //         function(){
+        //             document.querySelector("h1").style.color = "pink";
+        //         }
+        //     );
+        // }
+
+    // using jQuery - uper wale ke equivalent hai.
+    // select all elements and apply
+    $("button").click(function(){
+        $("h1").css("color","pink");
+    });
